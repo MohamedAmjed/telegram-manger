@@ -7,7 +7,7 @@ export async function POST(req: Request) {
 	// todo: Add zod validation
 
 	try {
-		// const isFirst = (await prisma.user.count()) === 0;
+		const isFirst = (await prisma.user.count()) === 0;
 
 		// if (!isFirst) {
 		// 	return new Response('Signups are disabled', { status: 403 });
